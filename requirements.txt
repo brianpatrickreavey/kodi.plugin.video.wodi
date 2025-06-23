@@ -1,0 +1,3 @@
+# This file is intentionally left blank.
+# You can add your Python package dependencies here when needed.
+# Dependencies provided natively in KODI should NOT be added to this file.
