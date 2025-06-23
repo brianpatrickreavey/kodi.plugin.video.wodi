@@ -29,8 +29,6 @@ class TIMEWindow(BaseTimerWindow):
 
     def run_timer(self):
         start_time = time.time() - self.elapsed
-        # To play countdown at start:
-        self.play_countdown()
         while self.running:
             now = time.time()
             self.elapsed = now - start_time
