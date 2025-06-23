@@ -27,8 +27,8 @@ env.bak/
 venv.bak/
 
 # Imported libraries (needed when bundling)
-pytube/
-pytubefix/
+resources/lib/pytube/
+resources/lib/pytubefix/
 
 # Mac
 .DS_Store
