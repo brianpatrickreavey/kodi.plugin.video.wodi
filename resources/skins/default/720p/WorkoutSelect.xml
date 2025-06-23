@@ -1,0 +1,49 @@
+<window>
+    <defaultcontrol>100</defaultcontrol>
+    <controls>
+        <control type="button" id="100">
+            <left>400</left>
+            <top>200</top>
+            <width>480</width>
+            <height>80</height>
+            <label>FOR TIME</label>
+            <font>font32</font>
+            <align>center</align>
+            <ondown>101</ondown>
+            <onup>103</onup>
+        </control>
+        <control type="button" id="101">
+            <left>400</left>
+            <top>300</top>
+            <width>480</width>
+            <height>80</height>
+            <label>AMRAP</label>
+            <font>font32</font>
+            <align>center</align>
+            <onup>100</onup>
+            <ondown>102</ondown>
+        </control>
+        <control type="button" id="102">
+            <left>400</left>
+            <top>400</top>
+            <width>480</width>
+            <height>80</height>
+            <label>EMOM</label>
+            <font>font32</font>
+            <align>center</align>
+            <onup>101</onup>
+            <ondown>103</ondown>
+        </control>
+        <control type="button" id="103">
+            <left>400</left>
+            <top>500</top>
+            <width>480</width>
+            <height>80</height>
+            <label>TABATA</label>
+            <font>font32</font>
+            <align>center</align>
+            <onup>102</onup>
+            <ondown>100</ondown>
+        </control>
+    </controls>
+</window>

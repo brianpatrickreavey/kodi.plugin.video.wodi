@@ -1,0 +1,100 @@
+<window>
+    <defaultcontrol>100</defaultcontrol>
+    <controls>
+        <!-- Timer Images -->
+        <control type="image" id="10">
+            <centerleft>110</centerleft><top>50</top><width>150</width><height>225</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/red/0.png</texture>
+        </control>
+        <control type="image" id="11">
+            <centerleft>240</centerleft><top>50</top><width>150</width><height>225</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/red/0.png</texture>
+        </control>
+        <control type="image" id="12">
+            <centerleft>320</centerleft><top>50</top><width>50</width><height>225</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/red/colon.png</texture>
+        </control>
+        <control type="image" id="13">
+            <centerleft>400</centerleft><top>50</top><width>150</width><height>225</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/red/0.png</texture>
+        </control>
+        <control type="image" id="14">
+            <centerleft>530</centerleft><top>50</top><width>150</width><height>225</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/red/0.png</texture>
+        </control>
+
+        <!-- Lap/Interval Timer Images -->
+        <control type="image" id="20">
+            <centerleft>173</centerleft><top>275</top><width>100</width><height>150</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/blank.png</texture>
+        </control>
+        <control type="image" id="21">
+            <centerleft>260</centerleft><top>275</top><width>100</width><height>150</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/blank.png</texture>
+        </control>
+        <control type="image" id="22">
+            <centerleft>320</centerleft><top>275</top><width>33</width><height>150</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/blank_colon.png</texture>
+        </control>
+        <control type="image" id="23">
+            <centerleft>380</centerleft><top>275</top><width>100</width><height>150</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/blank.png</texture>
+        </control>
+        <control type="image" id="24">
+            <centerleft>467</centerleft><top>275</top><width>100</width><height>150</height>
+            <texture>special://home/addons/plugin.video.wodi/resources/media/seven_segment_display/blank.png</texture>
+        </control>
+
+        <!-- Start/StopPause/Resume Button -->
+        <control type="button" id="100">
+            <left>200</left>
+            <top>420</top>
+            <width>240</width>
+            <height>80</height>
+			<font>font32</font>
+			<align>center</align>
+            <label>Start</label>
+            <onup>102</onup>
+            <ondown>101</ondown>
+        </control>
+
+        <!-- Stop/Reset Button -->
+        <control type="button" id="101">
+            <left>200</left>
+            <top>520</top>
+            <width>240</width>
+            <height>80</height>
+            <font>font32</font>
+            <align>center</align>
+            <label>Reset</label>
+            <onup>100</onup>
+            <ondown>102</ondown>
+        </control>
+
+        <!-- Setup Button -->
+        <control type="button" id="102">
+            <left>200</left>
+            <top>620</top>
+            <width>240</width>
+            <height>80</height>
+            <font>font32</font>
+            <align>center</align>
+            <label>Setup Workout</label>
+            <onup>101</onup>
+            <ondown>100</ondown>
+        </control>
+
+        <!-- Text Area on right half -->
+        <control type="textbox" id="200">
+            <left>660</left>
+            <top>100</top>
+            <width>640</width>
+            <height>400</height>
+            <font>font13</font>
+            <textcolor>white</textcolor>
+            <align>left</align>
+            <autoscroll>false</autoscroll>
+        </control>
+
+    </controls>
+</window>

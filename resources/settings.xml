@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30011">
+        <setting label="32011" type="text" id="username" default=""/>
+        <setting label="32012" type="text" id="password" option="hidden" default=""/>
+        <setting id="use_youtube_plugin"
+                 type="bool"
+                 label="Use YouTube Kodi plugin for playback"
+                 default="true"
+                 description="Requires YouTube plugin to be installed. If not installed, will fallback to direct playback." />
+
+        <!-- Workout Playlist Options -->
+        <setting id="enable_workout_playlist"
+                 type="bool"
+                 label="Play a workout playlist"
+                 default="false"
+                 description="Enable playback of a workout playlist during workouts." />
+
+        <setting id="workout_playlist"
+                 type="text"
+                 label="Workout Playlist"
+                 default="workout.m3u"
+                 enable="eq(-1,true)"
+                 description="Name of the playlist to use for workouts. Must already exist." />
+
+        <setting id="shuffle_workout_playlist"
+                 type="bool"
+                 label="Shuffle workout playlist"
+                 default="true"
+                 enable="eq(-2,true)"
+                 description="If enabled, the workout playlist will play in shuffled order starting from a random track." />
+
+        <!-- Cooldown Playlist Options -->
+        <setting id="enable_cooldown_playlist"
+                 type="bool"
+                 label="Play a cooldown playlist"
+                 default="false"
+                 description="Enable playback of a cooldown playlist after workouts." />
+
+        <setting id="cooldown_playlist"
+                 type="text"
+                 label="Cooldown Playlist"
+                 default="cooldown.m3u"
+                 enable="eq(-1,true)"
+                 description="Name of the playlist to use for cooldown. Must already exist." />
+
+        <setting id="shuffle_cooldown_playlist"
+                 type="bool"
+                 label="Shuffle cooldown playlist"
+                 default="true"
+                 enable="eq(-2,true)"
+                 description="If enabled, the cooldown playlist will play in shuffled order starting from a random track." />
+    </category>
+
+    <category label="EMOM Defaults">
+        <setting id="emom_total_minutes"
+                 type="number"
+                 label="Default EMOM total minutes"
+                 default="20"
+                 description="Default total length of EMOM workout in minutes." />
+        <setting id="emom_lap_minutes"
+                 type="number"
+                 label="Default EMOM lap minutes"
+                 default="1"
+                 description="Default length of each EMOM lap in minutes." />
+    </category>
+
+    <category label="Tabata Defaults">
+        <setting id="tabata_rounds"
+                 type="number"
+                 label="Default Tabata rounds"
+                 default="8"
+                 description="Default number of Tabata rounds." />
+        <setting id="tabata_work"
+                 type="number"
+                 label="Default Tabata work seconds"
+                 default="20"
+                 description="Default work interval in seconds for Tabata." />
+        <setting id="tabata_rest"
+                 type="number"
+                 label="Default Tabata rest seconds"
+                 default="10"
+                 description="Default rest interval in seconds for Tabata." />
+    </category>
+
+    <category label="AMRAP Defaults">
+        <setting id="amrap_minutes"
+                 type="number"
+                 label="Default AMRAP minutes"
+                 default="20"
+                 description="Default length of AMRAP in minutes." />
+    </category>
+</settings>
