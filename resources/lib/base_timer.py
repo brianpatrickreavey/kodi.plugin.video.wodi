@@ -43,9 +43,6 @@ class BaseTimerWindow(xbmcgui.WindowXML):
         if hasattr(self, "window_title") and self.window_title:
             self.text_area.setText(self.window_title)
 
-    def play_sound(self, filename):
-        xbmc.playSFX(filename)
-
     def start_timer(self):
         self.running = True
         self.start_time = time.time() - self.elapsed
@@ -158,14 +155,22 @@ class BaseTimerWindow(xbmcgui.WindowXML):
 
     def start_with_countdown(self):
         """Play countdown sound and start timer when ready."""
+        self.log(f"start_with_countdown called, elapsed={self.elapsed}")
         if self.elapsed == 0.0:
+            self.log("Playing countdown sound")
             self.play_countdown()
-            xbmc.sleep(3450)
+        else:
+            self.log("Skipping countdown sound, timer already started")
         self.start_stop_button.setLabel("Stop")
         self.start_timer()
+        xbmc.sleep(50)  # On start, wait a bit to ensure the timer is running before updating the label
+
+    def play_sound(self, filename):
+        xbmc.playSFX(filename)
 
     def play_countdown(self):
         self.play_sound("special://home/addons/plugin.video.wodi/resources/media/countdown.wav")
+        xbmc.sleep(3450)
 
     def play_beep(self):
         self.play_sound("special://home/addons/plugin.video.wodi/resources/media/beep.wav")
